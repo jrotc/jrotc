@@ -22,3 +22,59 @@
 </body>
 </html>
 <!--"https://docs.google.com/spreadsheets/d/e/2PACX-1vTielEXZAhSU5UHYdA8Ra66ArvesiCBwmv-gZX0JX7azRBMXyIazBdg4BPB6UqCzIeZmYuwOrMJt5ef/pub?gid=926989288&single=true&output=csv"-->
+
+<body>
+  <div class="container">
+    <div class="table-responsive">
+      <h1>Applications</h1>
+      <input type="text" id="myInput" onkeyup="filterApps(0)" placeholder="Search for names.." title="Type in a name"><br>
+      <button onclick="filterApps(0)">Name</button><button onclick="filterApps(1)">Developer</button><button onclick="filterApps(2)">Special Permission Required</button><button onclick="filterApps(4)">Operating System</button><button onclick="filterApps(5)">Latest Version</button>
+      <button onclick="filterApps(6)">Last Updated</button><button onclick="filterApps(7)">File Size </button><button onclick="filterApps(8)">Packages </button><button onclick="filterApps(9)">File Description</button>
+      <br />
+      <div align="center">
+      </div>
+      <br />
+      <div id="app-list">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<script>
+  var type = 0;
+
+  function filterApps(type) {
+    var input, filter, table, tr, td, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[type];
+      if (td) {
+        if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+</script>
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+</script>
