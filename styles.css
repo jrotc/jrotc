@@ -1,3 +1,26 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width:2000px;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.popup{
+
+}
+
 /***********************************
 Accordion
 ***********************************/
@@ -40,25 +63,6 @@ Accordion
     }
 
 /*End */
-body {
-    font-family: "Lato", sans-serif;
-}
-
-.left {
-    text-align: left;
-}
-
-.right {
-    text-align: right;
-}
-
-.center {
-    text-align: center;
-}
-
-.popup{
-
-}
 /***************************************
 Table Styling
 ***************************************/
