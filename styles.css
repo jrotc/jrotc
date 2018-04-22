@@ -2,7 +2,9 @@ body {
     font-family: "Lato", sans-serif;
     margin-left: 100px;
     margin-right: 100px;
-    max-width:2000px;
+}
+div {
+    align: center;   
 }
 
 .left {
