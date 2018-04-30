@@ -23,7 +23,19 @@ div {
 .popup{
 
 }
-
+/*Fullscreen Objects*/
+#fullscreen-object {
+    overflow: hidden;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
 /***********************************
 Accordion
 ***********************************/
