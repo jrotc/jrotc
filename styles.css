@@ -2,7 +2,6 @@ body {
     font-family: "Lato", sans-serif;
     background-color: AAAAAA;
     margin: 0px;
-    border: 5px;
 }
 div {
     align: center;   
@@ -107,6 +106,7 @@ Menu Module
     z-index: 5;
     margin-left: 0px;
     margin-right: 0px;
+    border: 5px solid black;
 }
 
 .sidenav {
