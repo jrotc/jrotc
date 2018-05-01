@@ -1,281 +1,301 @@
 body {
-    font-family: "Lato", sans-serif;
-    background-color: AAAAAA;
-    margin: 0px;
+  font-family: "Lato", sans-serif;
+  background-color: AAAAAA;
+  margin: 1px;
+}
+.WidgetFooter {
+  visibility: hidden;
 }
 div {
-    align: center;   
+  align: center;
 }
 
 .left {
-    text-align: left;
+  text-align: left;
 }
 
 .right {
-    text-align: right;
+  text-align: right;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
-.popup{
-
+.popup {
 }
-#rightcolumn{
-    
+#rightcolumn {
 }
 /*Fullscreen Objects*/
 #fullscreen-object {
-    overflow: hidden;
-    overflow-x:hidden;
-    overflow-y:hidden;
-    height: 150%;
-    width: 100%;
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 150%;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
 }
 /************************************
 Import Basic HTML Layout
 ************************************/
 /* Header/Blog Title */
 .header {
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
-    background: white;
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {   
-    float: left;
-    width: 75%;
+.leftcolumn {
+  float: left;
+  width: 74%;
+  position: absolute;
 }
 
 /* Right column */
 .rightcolumn {
-    float: right;
-    width: 25%;
-    padding-left: 20px;
+  float: right;
+  width: 25%;
+  padding-left: 10px;
+  margin-right: 5px;
+  position: static;
 }
 
 /* Fake image */
 .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
 }
 
 /* Add a card effect for articles */
 .card {
-     background-color: white;
-     padding: 20px;
-     margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Footer */
 .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
 }
 
 /***********************************
 Accordion
 ***********************************/
-    .accordion {
-      background-color: #eee;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: 0.4s;
-    }
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
 
-    .active,
-    .accordion:hover {
-      background-color: #ccc;
-    }
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
 
-    .accordion:after {
-      content: '\002B';
-      color: #777;
-      font-weight: bold;
-      float: right;
-      margin-left: 5px;
-    }
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
 
-    .active:after {
-      content: "\2212";
-    }
+.active:after {
+  content: "\2212";
+}
 
-    .panel {
-      padding: 0 18px;
-      background-color: white;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-    }
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 
 /*End */
 /***************************************
 Table Styling
 ***************************************/
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+  background-color: #dddddd;
 }
 /***************************************
 Menu Module
 ***************************************/
 #navContainer {
-    color: white;
-    background-color:black;
-    padding: 5px;
-    margin-top: -10px;
-    z-index: 5;
-    margin-left: 0px;
-    margin-right: 0px;
-    border: 5px solid black;
-    width: 100%
+  color: white;
+  background-color: black;
+  padding: 0px;
+  z-index: 100;
+  border: 10px solid black;
+  width: 100;
+  margin: 0%;
+  position: static;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: -1px;
 }
 
 .sidenav {
-    height: 100%;
-    width: 0px;
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    margin-left: 0px;
-    margin-right: 0px;
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 99;
+  top: 10px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /*Dropdown Menu for Applications*/
 /* Style the sidenav links and the dropdown button */
 .dropdown-btn {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    color: #818181;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-    font-size:25px;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-size: 25px;
 }
 
 /* On mouse-over*/
-.sidenav a:hover, .dropdown-btn:hover {
-    color: #f1f1f1;
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: #f1f1f1;
 }
 
 /* Add an active class to the active dropdown button */
 .active {
-    background-color: grey;
-    color: white;
+  background-color: grey;
+  color: white;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
-    display: none;
-    background-color: #262626;
-    padding-left: 8px;
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
 }
 
 /* Optional: Style the caret down icon */
 .fa-caret-down {
-    float: right;
-    padding-right: 25px;
-    color:white;
-    z-index: 3;
+  float: right;
+  padding-right: 25px;
+  color: white;
+  z-index: 3;
 }
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /* Animated Menu span buttons*/
 .container {
-    display: inline-block;
-    cursor: pointer;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;
+}
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
