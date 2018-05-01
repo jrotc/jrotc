@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <body>
+<div id="nav"></div>
 <div id="navContainer">
 <div id="mySidenav" class="sidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 <a href="./">Home</a>
 <a href="./docs">Documents</a>
 </div><!--End Sidenav-->
+  <div id="top-nav">
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <span style="position: static; margin-left: 40%">AFJROTC Ben Eielson</span>
+  </div>
 <script>
  function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
-
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
@@ -21,7 +24,6 @@ function closeNav() {
     //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
-
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -34,7 +36,7 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
  </script>
- </div>
+</div>
 </body>
 </html>
 <!--Dropdown
