@@ -27,11 +27,7 @@
 </head>
 
 <body>
-  <div id="nav"></div>
-  <script>
-    $("#nav").load("./sync.html", "#navContainer");
-  </script>
-  <noscript>
+<noscript>
   This site requires javascript to function correctly.
   </noscript>
   <div>
@@ -39,9 +35,13 @@
     <h3>"No One Comes Close"</h3>
     <div id="calendar-container">
     </div id="calendar" style="margin:auto">
-    <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23c0c0c0&amp;src=t064e5tv57ctfuoo0t7epgbpbg%40group.calendar.google.com&amp;color=%23865A5A&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FAnchorage" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <iframe class="leftcolumn" src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23c0c0c0&amp;src=t064e5tv57ctfuoo0t7epgbpbg%40group.calendar.google.com&amp;color=%23865A5A&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FAnchorage" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
   </div>
-  <div id="zone-right"></div>
+<div class="rightcolumn remind">
+<script src="https://widgets.remind.com/iframe.js?token=c8febbd01909013555040242ac110002&height=800join=false&sign-up=false">
+  </script>
+  </div>
+  
 </body>
 
 </html>
