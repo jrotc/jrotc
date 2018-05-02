@@ -171,6 +171,9 @@ Menu Module
   background-color: black;
   padding: 10px;
 }
+.grid-container two {
+  grid-template-columns: 74%; 25%;
+}
 @media screen and (max-width: 600px){
     .grid-container, 
     grid-container {float: none; grid-template-columns: auto}
