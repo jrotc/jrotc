@@ -10,16 +10,14 @@
 <title>JROTC</title>
 <link id="favicon" rel="icon" href="./favicon.ico" type="image/gif" sizes="16x16">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./scripts/sync.js"></script>
 </head>
-<body>
-<div id="nav"></div>
-  <script>
-    $("#nav").load("./sync.html", "#navContainer");
-  </script>
+<body onload="loadModules()">
   <noscript>
   This site requires javascript to function correctly.
   </noscript>
+  <!--Add Content Below Here-->
+  <h1>Documents</h1>
   <object id="fullscreen-object" target="framename" frameborder="0" height="150%" width="100%" data="https://drive.google.com/embeddedfolderview?id=0Bx5UavQM4JxCflR0QTg3U0ViQWE4YVF6ZkwwRUU4anJ6MThsME14M3lESnhVR0FaOWc4RG8#grid"></object>
 </body>
 </html>
-<!--"https://docs.google.com/spreadsheets/d/e/2PACX-1vTielEXZAhSU5UHYdA8Ra66ArvesiCBwmv-gZX0JX7azRBMXyIazBdg4BPB6UqCzIeZmYuwOrMJt5ef/pub?gid=926989288&single=true&output=csv"-->
