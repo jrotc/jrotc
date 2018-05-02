@@ -1,10 +1,10 @@
 function loadModules() {
     var getBody = document.body.innerHTML;
-    var setNav = document.createElement('div');
-    var setFoo = document.createElement('div');
-    setNav.setAttribute('id', 'nav');
-    setFoo.setAttribute('id', 'footer');
+    var setNav = '<div id="nav"></div>';
+    var setFoo = '<div id="footer"></div>';
     document.body.innerHTML = setNav + getBody + setFoo;
+    $("#nav").load("./sync.html", "#navContainer");
+    $("#footer").load("./sync.html", "#footer");
 };
 
 function openNav() {
