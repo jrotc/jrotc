@@ -1,6 +1,6 @@
 function modules() {
     var getBody = document.body.innerHTML;
-    $(body).load(./sync.html) + getBody
+    $(body).load("./sync.html", "#navContainer") + getBody + $(body).load("./sync.html", "#footer")
 };
 
 function openNav() {
