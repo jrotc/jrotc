@@ -7,37 +7,5 @@ function loadModules() {
     var setFoo = '<div id="footer"></div>';
     document.body.innerHTML = setNav + getBody + setFoo;
     $("#nav").load("./sync.html", "#navContainer #doc-sync-scripts");
-    $("#footer").load("./sync.html", "#footer-tp");
-};
-/******************************
-NAV FUNCTIONS
-******************************/
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-    /**********************************
-    DROPDOWN BUTTON FUNCTION
-    Loop through all dropdown buttons to
-    toggle between hiding and showing its 
-    dropdown content - This allows the user
-    to have multiple dropdowns without any 
-    conflict 
-    ***********************************/
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
+    $("#footer").load("./sync-footer.html", "#footer");
 };
