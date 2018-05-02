@@ -6,63 +6,67 @@
 NAVIGATION
 -------------------------------------------->
   <div id="navContainer">
-    <!--NAVIGATION UNIT-->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <!--Add Links Below HERE!-->
       <a href="./">Home</a>
       <a href="./docs">Documents</a>
     </div>
-    <!--End Sidenav***NO EDIT BELOW HERE! -->
+    <!--End Sidenav-->
     <div id="top-nav">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-      <span style="position: static; margin-left: 40%">AFJROTC Ben Eielson</span>
-    </div>
+      <div class="grid-container">
+        <div><span style="text-align: left;cursor:pointer" onclick="openNav()">&#9876; Navigate</span>
+          <!--Default is &#9776-->
+        </div>
+        <span style="text-align: center">AFJROTC Ben Eielson</span>
+        <div id="login-logout" style="text-align: right">
+          <span class="cubed-link" onclick="gSet(0)">Logsin</span>
+          <span class="cubed-link" onclick="gSet(1)">Logout</span>
+        </div>
 
-    <!--------------------------------------------
-FOOTER
---------------------------------------------->
-  </div>
-  <div id="footer-tp">
-    <p>Ben Eielson AFJROTC</p>
-    <br>
-    <p>Official Operating Site</p>
-  </div>
-  <!-------------------------------------------
+        <!-------------------------------------
 FUNCTIONS***FUNCTIONS***FUNCTIONS
-***DO NOT EDIT***
--------------------------------------------->
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
+------------------------------->
+        <script>
+          function gSet(type) {
+            var winLo = window.location.href;
+            var winLoP = winLo.replace("https://", "https%3A%2F%2F")
+            var logout = 0;
+            var login = 1;
+            if (type === logout) {
+              window.open("https://accounts.google.com/Logout?hl=en&continue=" + winLo, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+            } else {
+              window.open("https://www.google.com/a/UniversalLogin?continue=" + winLo, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400")
+            }
+          };
+        </script>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
 
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-  </script>
-  <script>
-    //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
-    }
-  </script>
-  <script>
-    $(document).ready(function() {
-      var foo = document.getElementById("footer-tp").innerHTML;
-      document.body.innerHTML += '<footer id="footer">' + foo + '</footer>';
-    });
-  </script>
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <script>
+      //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </div>
 </body>
 
 </html>
