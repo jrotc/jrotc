@@ -1,8 +1,8 @@
 function loadModules() {
     var getBody = document.body.innerHTML;
-    var getNav = $("body").load("./sync.html", "#navContainer");
-    var getFoot = $("body").load("./sync.html", "#footer");
-    getNav + getBody + getFoot;
+    var cNav = '<div id="nav"></div>';
+    var cFoot = '<footer id="footer"></footer>';
+    document.body.innerHTML = cNav + getBody + cFoot;
 };
 
 function openNav() {
