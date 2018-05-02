@@ -6,7 +6,7 @@ function loadModules() {
     var setNav = '<div id="nav"></div>';
     var setFoo = '<div id="footer"></div>';
     document.body.innerHTML = setNav + getBody + setFoo;
-    $("#nav").load("./sync.html", "#navContainer");
+    $("#nav").load("./sync.html", "#navContainer #doc-sync-scripts");
     $("#footer").load("./sync.html", "#footer-tp");
 };
 /******************************
