@@ -171,6 +171,10 @@ Menu Module
   background-color: black;
   padding: 10px;
 }
+@media screen and (max-width: 600px){
+    .grid-container, 
+    grid-container {float: none; grid-template-columns: auto}
+}
 #navContainer {
   color: white;
   background-color: black;
@@ -280,6 +284,7 @@ Menu Module
     font-size: 18px;
   }
 }
+
 
 /* Animated Menu span buttons*/
 .container {
