@@ -55,6 +55,7 @@ Import Basic HTML Layout
 .leftcolumn {
   float: left;
   width: 74%;
+  height: width;
   position: absolute;
 }
 
