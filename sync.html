@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
 <body>
-<div id="navContainer">
+<!-------------------------------------------
+NAVIGATION
+-------------------------------------------->
+<div id="navContainer"><!--NAVIGATION UNIT-->
 <div id="mySidenav" class="sidenav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><!--Add Links Below HERE!-->
 <a href="./">Home</a>
 <a href="./docs">Documents</a>
-</div><!--End Sidenav-->
+</div><!--End Sidenav***NO EDIT BELOW HERE! -->
   <div id="top-nav">
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     <span style="position: static; margin-left: 40%">AFJROTC Ben Eielson</span>
   </div>
+  
+<!--------------------------------------------
+FOOTER
+--------------------------------------------->
+  </div>
+  <div id="footer-tp">
+    <p>Ben Eielson AFJROTC</p>
+  <br>
+    <p>Official Operating Site</p>
+  </div>
+<!-------------------------------------------
+FUNCTIONS***FUNCTIONS***FUNCTIONS
+***DO NOT EDIT***
+-------------------------------------------->
 <script>
  function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -35,11 +52,14 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
  </script>
-</div>
+$(document).ready(function(){
+  var foo = document.getElementById("footer-tp").innerHTML;
+  document.body.innerHTML += '<footer id="footer">' + foo + '</footer>';
+ 
+});
 </body>
 </html>
-<!--Dropdown
-
+<!--Dropdown Button Template for Navigation!
 <button class="dropdown-btn">Dropdown
 <i class="fa fa-caret-down"></i>
 </button>
