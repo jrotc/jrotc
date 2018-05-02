@@ -4,7 +4,7 @@ function loadModules() {
     var setFoo = '<div id="footer"></div>';
     document.body.innerHTML = setNav + getBody + setFoo;
     $("#nav").load("./sync.html", "#navContainer");
-    $("#footer").load("./sync.html", "#footer");
+    //$("#footer").load("./sync.html", "#footer");
 };
 
 function openNav() {
