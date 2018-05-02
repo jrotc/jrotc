@@ -8,37 +8,21 @@ NAVIGATION
   <div id="navContainer">
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!--***Add Links Below***-->
       <a href="./">Home</a>
       <a href="./docs">Documents</a>
     </div>
-    <!--End Sidenav-->
+    <!--***End Sidenav***-->
     <div id="top-nav">
       <div class="grid-container">
         <div><span style="text-align: left;cursor:pointer" onclick="openNav()">&#9876; Navigate</span>
           <!--Default is &#9776-->
         </div>
+        <!--Edit Top of Nav-->
         <span style="text-align: center">AFJROTC Ben Eielson</span>
-        <div id="login-logout" style="text-align: right">
-          <span class="cubed-link" onclick="gSet(0)">Logsin</span>
-          <span class="cubed-link" onclick="gSet(1)">Logout</span>
-        </div>
-
         <!-------------------------------------
 FUNCTIONS***FUNCTIONS***FUNCTIONS
 ------------------------------->
-        <script>
-          function gSet(type) {
-            var winLo = window.location.href;
-            var winLoP = winLo.replace("https://", "https%3A%2F%2F")
-            var logout = 0;
-            var login = 1;
-            if (type === logout) {
-              window.open("https://accounts.google.com/Logout?hl=en&continue=" + winLoP, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
-            } else {
-              window.open("https://www.google.com/a/UniversalLogin?continue=" + winLoP, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400")
-            }
-          };
-        </script>
       </div>
     </div>
     <script>
