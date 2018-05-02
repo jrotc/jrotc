@@ -24,8 +24,6 @@ div {
 
 .popup {
 }
-#rightcolumn {
-}
 /*Fullscreen Objects*/
 #fullscreen-object {
   overflow: hidden;
@@ -161,13 +159,25 @@ tr:nth-child(even) {
 /***************************************
 Menu Module
 ***************************************/
+.cubed-link {
+  border: 1px solid white;
+  padding: 1px;
+  cursor: pointer;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
 #navContainer {
   color: white;
   background-color: black;
   padding: 0px;
   z-index: 100;
   border: 10px solid black;
-  width: 100%;
+  width: 100;
   margin: 0%;
   position: static;
   overflow-x: hidden;
