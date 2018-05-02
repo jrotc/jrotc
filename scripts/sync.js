@@ -1,8 +1,10 @@
 function loadModules() {
     var getBody = document.body.innerHTML;
-    var cNav = '<div id="nav"></div>';
-    var cFoot = '<footer id="footer"></footer>';
-    document.body.innerHTML = cNav + getBody + cFoot;
+    var setNav = document.createElement('div');
+    var setFoo = document.createElement('div');
+    setNav.setAttribute('id', 'nav');
+    setFoo.setAttribute('id', 'footer');
+    document.body.innerHTML = setNav + getBody + setFoo;
 };
 
 function openNav() {
