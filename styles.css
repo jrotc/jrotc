@@ -54,7 +54,7 @@ Import Basic HTML Layout
   float: left;
   width: 74%;
   height: width;
-  position: absolute;
+  position: static;
 }
 
 /* Right column */
@@ -64,6 +64,9 @@ Import Basic HTML Layout
   padding-left: 10px;
   margin-right: 5px;
   position: static;
+}
+@media screen and (max-width: 600px){
+    .grid-two-col {position: static}
 }
 
 /* Fake image */
@@ -171,14 +174,7 @@ Menu Module
   background-color: black;
   padding: 10px;
 }
-.grid-two-col {
-  grid-template-columns: 74% 25%;
-  grid-gap: 10px;
-  padding: 10px;
-}
-@media screen and (max-width: 600px){
-    .grid-two-col {float: none; grid-template-columns: auto}
-}
+
 #navContainer {
   color: white;
   background-color: black;
