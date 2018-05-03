@@ -43,7 +43,7 @@ div {
   overflow-y: hidden;
   height: 150%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 100px;
   left: 0px;
   right: 0px;
