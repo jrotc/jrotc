@@ -37,6 +37,18 @@ div {
   right: 0px;
   bottom: 0px;
 }
+.fullscreen {
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 150%;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
 /************************************
 Import Basic HTML Layout
 ************************************/
