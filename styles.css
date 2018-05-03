@@ -49,6 +49,18 @@ div {
   right: 0px;
   bottom: 0px;
 }
+}
+.fullscreen-cal {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  clear:both;
+}
 /************************************
 Import Basic HTML Layout
 ************************************/
